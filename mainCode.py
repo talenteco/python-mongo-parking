@@ -10,6 +10,7 @@ def findParkingSpace(values):
     
     return(parkingSpace)
 
+
 def retrieveParkingValue(carIdentifier, collection):
     if(collection.count_documents({'car_identifier' : carIdentifier})>0):
         currentParkingSpot = {}
@@ -50,7 +51,6 @@ def storeParkingValue(carIdentifier, collection, finalDecision):
         
         else:
             print("Sorry, the parking space is currently full. Remove a car first before proceeding to park!")
-
 
     else:
         collection.delete_one({'car_identifier' : carIdentifier})
