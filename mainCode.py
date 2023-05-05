@@ -3,7 +3,7 @@ from connectToDB import connectToMongo
 
 def findParkingSpace(values):
     parkingSpace=-1
-    for i in range(1, 3):
+    for i in range(1, 41):
         if(i not in values):
             parkingSpace = i
             break
