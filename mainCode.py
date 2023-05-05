@@ -33,7 +33,6 @@ def retrieveParkingValue(carIdentifier, collection):
             return(-1)
 
 
-
 def storeParkingValue(carIdentifier, collection, finalDecision):
     if(finalDecision == "PARK"):
         values=[]
